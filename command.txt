@@ -1,0 +1,1 @@
+docker run -d --name greenplum -p 5433:5432 -p 2222:22 -v greenplum_data:/gpdata projectairws/greenplum:latest /bin/sh -c "/app/start_greenplum.sh && tail -f /dev/null"
